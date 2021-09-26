@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="button_info_show">Show</string>
+
+    <string-array name="spinner_items">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+    </string-array>
+
+    <string-array name="text_view_info">
+        <item>First Item</item>
+        <item>Second Item</item>
+        <item>Third Item</item>
+    </string-array>
 </resources>

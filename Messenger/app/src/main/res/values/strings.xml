@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="edit_send_text_hint">Write...</string>
+    <string name="button_send">Send</string>
+</resources>

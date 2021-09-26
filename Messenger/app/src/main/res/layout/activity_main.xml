@@ -6,33 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Spinner
-        android:id="@+id/spinnerInfo"
-        android:layout_width="409dp"
+    <EditText
+        android:id="@+id/editSendText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:entries="@array/spinner_items"
-        android:layout_margin="8dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/edit_send_text_hint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonSpendInfo"
+        android:id="@+id/buttonSend"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/button_info_show"
-        android:layout_margin="8dp"
-        android:onClick="showItem"
+        android:layout_margin="10dp"
+        android:text="@string/button_send"
+        android:onClick="onClickSendMsg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerInfo" />
-
-    <TextView
-        android:id="@+id/textViewItems"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSpendInfo" />
+        app:layout_constraintTop_toBottomOf="@+id/editSendText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
