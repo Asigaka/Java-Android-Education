@@ -18,7 +18,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
-
     private String url = "https://bodysize.org/ru/top100/";
 
     @Override

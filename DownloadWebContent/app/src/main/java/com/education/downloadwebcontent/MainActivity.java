@@ -17,7 +17,7 @@ import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String url = "https://www.google.ru/";
+    private String url = "http://api.openweathermap.org/data/2.5/weather?q=London&appid=b96875cc2d2f6e0710509b3ce2b066e1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-            Log.i("URL", strings[0]);
             return result.toString();
         }
     }

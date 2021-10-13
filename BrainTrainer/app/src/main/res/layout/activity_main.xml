@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="31 + 2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/answerBtn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/answerBtn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="onClickAnswer"
+        android:layout_margin="@dimen/margin_out_button"
+        android:padding="@dimen/padding_inside_button"
+        android:textSize="@dimen/text_size_inside_button"
+        app:layout_constraintBottom_toTopOf="@+id/answerBtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/answerBtn4"/>
+
+    <Button
+        android:id="@+id/answerBtn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="onClickAnswer"
+        android:layout_margin="@dimen/margin_out_button"
+        android:padding="@dimen/padding_inside_button"
+        android:textSize="@dimen/text_size_inside_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/answerBtn3"/>
+
+    <Button
+        android:id="@+id/answerBtn3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="onClickAnswer"
+        android:layout_margin="@dimen/margin_out_button"
+        android:padding="@dimen/padding_inside_button"
+        android:textSize="@dimen/text_size_inside_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerBtn2" />
+
+    <Button
+        android:id="@+id/answerBtn4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="onClickAnswer"
+        android:layout_margin="@dimen/margin_out_button"
+        android:padding="@dimen/padding_inside_button"
+        android:textSize="@dimen/text_size_inside_button"
+        app:layout_constraintBottom_toTopOf="@+id/answerBtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerBtn1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

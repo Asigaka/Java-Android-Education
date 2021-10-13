@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_inside_button">24dp</dimen>
+    <dimen name="margin_out_button">4dp</dimen>
+    <dimen name="text_size_inside_button">24sp</dimen>
+</resources>
