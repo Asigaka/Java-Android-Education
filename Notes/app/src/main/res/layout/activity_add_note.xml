@@ -53,6 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/holo_red_light"
+            android:checked="true"
             android:text="@string/priority_1" />
 
         <RadioButton
